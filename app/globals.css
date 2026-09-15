@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Noir / Blanc — base de l'interface */
+  --color-background: #0a0a0f;
+  --color-surface: #121218;
+  --color-foreground: #ffffff;
+  --color-muted: #9aa3b2;
+  --color-border: #232a36;
+
+  /* Bleu — couleur d'accent principale */
+  --color-primary: #2563eb;
+  --color-primary-foreground: #ffffff;
+
+  /* Teintes intermédiaires (entre blanc/bleu/noir) */
+  --color-primary-light: #60a5fa;
+  --color-primary-dark: #1e3a8a;
+  --color-slate: #64748b;
+
+  --color-success: #34d399;
+  --color-warning: #fbbf24;
+  --color-danger: #f87171;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.5rem;
+
+  --font-sans: "Times New Roman", Times, serif;
+  --font-display: "Times New Roman", Times, serif;
+
+  --text-sm: clamp(0.813rem, 0.78rem + 0.15vw, 0.875rem);
+  --text-base: clamp(0.938rem, 0.9rem + 0.2vw, 1rem);
+  --text-lg: clamp(1.063rem, 1rem + 0.3vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --text-2xl: clamp(1.625rem, 1.4rem + 1vw, 2rem);
+  --text-3xl: clamp(2rem, 1.6rem + 1.8vw, 2.75rem);
+  --text-hero: clamp(2.5rem, 1.8rem + 3.2vw, 4.5rem);
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.35; }
+  50% { transform: scale(1.15); opacity: 0.5; }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
