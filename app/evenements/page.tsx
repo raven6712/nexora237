@@ -61,14 +61,14 @@ export default function EvenementsPage() {
       <Container className="flex flex-col gap-16">
         <SectionTitle eyebrow="À venir" title="Événements à venir" />
         <Suspense fallback={<EventsSkeleton />}>
-         
+          
           <UpcomingEvents />
         </Suspense>
 
         <div className="flex flex-col gap-6">
           <SectionTitle title="Événements passés" />
           <Suspense fallback={<EventsSkeleton />}>
-           
+            
             <PastEvents />
           </Suspense>
         </div>

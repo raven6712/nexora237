@@ -1,8 +1,8 @@
-// File: /home/jordanelle/Téléchargements/nexora237-complete-1/nexora237/app/projets/page.tsx
-import * as entry from '../../../../app/projets/page.js'
+// File: /home/jordanelle/Téléchargements/nexora237-complete-1/nexora237/app/a-propos/page.tsx
+import * as entry from '../../../../app/a-propos/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../app/projets/page.js')
+type TEntry = typeof import('../../../../app/a-propos/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

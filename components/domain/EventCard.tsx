@@ -14,7 +14,7 @@ const fallbackPhotos = [
 
 function pickFallback(seed: string) {
   const index = seed.charCodeAt(0) % fallbackPhotos.length;
-  return fallbackPhotos[index];
+  return fallbackPhotos[index] ?? fallbackPhotos[0]!;
 }
 
 export function EventCard({ event, isPast = false }: { event: NexoraEvent; isPast?: boolean }) {
