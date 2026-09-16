@@ -1,5 +1,14 @@
 {
-  "/evenements/page": "app/evenements/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/evenements/[slug]/page": "app/evenements/[slug]/page.js",
   "/page": "app/page.js",
-  "/a-propos/page": "app/a-propos/page.js"
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/contact/page": "app/contact/page.js",
+  "/a-propos/page": "app/a-propos/page.js",
+  "/evenements/page": "app/evenements/page.js",
+  "/inscription/page": "app/inscription/page.js",
+  "/connexion/page": "app/connexion/page.js",
+  "/projets/page": "app/projets/page.js",
+  "/profil/page": "app/profil/page.js"
 }
